@@ -1,0 +1,29 @@
+const PREFIX = Object.freeze({
+  USER: 'USR',
+  COMPANY: 'COM',
+  SUBSCRIPTION: 'SUB',
+  JOB: 'JOB',
+  LEAD: 'LEAD',
+});
+exports.PREFIX = PREFIX;
+
+const SUBSCRIPTION_PLANS = Object.freeze({
+  BASIC: 'BASIC',
+  MEDIUM: 'MEDIUM',
+  PRO: 'PRO',
+});
+exports.SUBSCRIPTION_PLANS = SUBSCRIPTION_PLANS;
+const ALL_SUBSCRIPTION_PLANS = Object.freeze(Object.values(SUBSCRIPTION_PLANS));
+exports.ALL_SUBSCRIPTION_PLANS = ALL_SUBSCRIPTION_PLANS;
+
+const USER_TYPES = Object.freeze({
+  SUPER_ADMIN: 'SUPER_ADMIN',
+  DRIVER: 'DRIVER',
+  AGENCY: 'AGENCY',
+  CLIENT: 'CLIENT',
+  SPT_ADMIN: 'SPT_ADMIN',
+  DISABLED: 'DISABLED',
+});
+exports.USER_TYPES = USER_TYPES;
+const ALL_USER_TYPES = Object.freeze(Object.values(USER_TYPES));
+exports.ALL_USER_TYPES = ALL_USER_TYPES;

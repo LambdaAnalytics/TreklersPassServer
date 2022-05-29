@@ -1,0 +1,38 @@
+{
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "extends": ["airbnb-base", "plugin:jest/recommended", "plugin:security/recommended", "plugin:prettier/recommended", "plugin:@typescript-eslint/recommended"],
+  "plugins": ["jest", "security", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018, 
+    "sourceType": "module"
+  },
+  "rules": {
+    "func-names": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "no-underscore-dangle": "off",
+    "no-use-before-define": "off",
+    "consistent-return": "off",
+    "jest/expect-expect": "off",
+    "no-async-promise-executor": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "security/detect-object-injection": "off",
+    "security/detect-non-literal-regexp": "off",
+    "import/prefer-default-export": "off",
+    "no-new-wrappers": "off",
+    "no-unused-vars": "off",
+    "camelcase": "error",
+    "no-restricted-syntax": "error",
+    "no-param-reassign": "error",
+    "indent": [
+        "off",
+        2
+    ],
+    "no-console": "error",
+    "no-shadow": "error"
+  }
+}
